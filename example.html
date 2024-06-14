@@ -1,0 +1,101 @@
+<html>
+<head class="____">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="u4.css">
+<style>
+body:after{
+  content:var(--____);
+}
+.____.blue{
+  --____placeholder-color:blue;
+}
+.____.red{
+  --____placeholder-color:red;
+}
+textarea{
+  width:250px;
+  height:250px;
+}
+.____ select{
+  width:200px;
+  height:24px;
+  --____placeholder-color:#4444FF;
+  --____select-text-color:orange;
+}
+input[type="radio"]{
+  width:19px;
+  height:19px;
+  border:1px solid #000;
+  border-radius:50%;
+  position:relative;
+}
+input[type="radio"]:checked::before{
+  content:'';
+  border-radius:50%;
+  background:#000;
+  width:9px;
+  height:9px;
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+}
+</style>
+</head>
+<body>
+  <main class="____ blue">
+    <h1> test</h1>
+    <a href="#">test</a>
+    <b>bold</b>
+    <s>test</s>
+    <input class="" type="text" placeholder="placeholder">a</input>
+    <input class="" type="text" placeholder="placeholder">a</input>
+    <input class="" type="text" placeholder="placeholder">a</input>
+    <textarea placeholder="placeholder"></textarea>
+  </main>
+  <div class="____ red">
+    <input class="" type="text" placeholder="placeholder">a</input>
+    <input class="" type="text" placeholder="placeholder">a</input>
+    <input class="" type="text" placeholder="placeholder">a</input>
+    <textarea placeholder="placeholder"></textarea>
+  </div>
+  <div class="____">
+    <ruby>Space Space
+      <rt>Hello World</rt>
+    </ruby>
+  </div>
+  <div class="____">
+    <select class="" required>
+      <option value="" disabled selected>please select.</option>
+      <option value="earth">earth</option>
+      <option value="sun">sun</option>
+      <option value="moon">moon</option>
+    </select>
+  </div>
+  <div class="____">
+    <ol>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+    </oL>
+  </div>
+  <div class="____">
+      <label class="____"><input type="radio" name="test-radio" value="-" disabled checked><span>test</span></label>
+      <label class="____"><input type="radio" name="test-radio" value="space"><span>space</span></label>
+      <label><input type="radio" name="test-radio" value="sea"><span>sea</span></label>
+      <label><input type="radio" name="test-radio" value="ground"><span>ground</span></label>
+  </div>
+  <div class="____">
+    <button>test</button>
+    <input type="submit" value="submit">
+    <input type="reset" value="reset">
+  </div>
+  <div class="____">
+    <details>
+      <summary>open</summary>
+      hello.
+    </details>
+  </div>
+</body>
+</html>

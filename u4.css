@@ -1,0 +1,167 @@
+/* https://github.com/tm124k4/u4.css | MIT License */
+:where(body .____){
+  --____reset-css-include:0;
+  --____color--black:#444;
+  --____color--gray:#AAA;
+  --____color--white:#fff;
+  --____font-family:'Noto Sans',sans-serif;
+
+  --____font-size-xxl:xx-large;
+  --____font-size-xl:x-large;
+  --____font-size-lr:larger;
+  --____font-size-l:large;
+  --____font-size-m:medium;
+  --____font-size-s:small;
+  --____font-size-sr:smaller;
+  --____font-size-xs:x-small;
+  --____font-size-xxs:xx-small;
+
+  --____font-size:var(--____font-size-m);
+  --____font-size--smaller:var(--____font-size-sr);
+
+  --____bold-font-weight:bold;
+  --____heading-font-weight:bold;
+  
+  --____input-box-border:1px solid var(--____color--black);
+  --____input-font-size:var(--____font-size);
+  --____input-text-color:var(--____color--black);
+  --____supsub-font-size:var(--____font-size--smaller);
+  --____placeholder-font-size:var(--____font-size);
+  --____placeholder-color:var(--____color--gray);
+
+  --____ruby-font-size:50%;
+
+  --____button-background:var(--____color--gray);
+  --____button-text-color:var(--____color--white);
+  --____link-hover-opacity:.4;
+  --____button-hover-opacity:.4;
+  --____summary-hover-opacity:.4;
+  --____button-active-opacity:.3;
+
+  --____hover-cursor:pointer;
+}
+
+:where(.____ :is(a,u)){text-decoration:underline}
+:where(.____ a:hover){
+  color:var(--____link-hover-color);
+  background:var(--____link-hover-background);
+  opacity:var(--____link-hover-opacity);
+  filter:var(--____link-hover-filter);
+  transform:var(--____link-hover-transform);
+}
+:where(.____ a:active){
+  color:var(--____link-active-color);
+  background:var(--____link-active-background);
+  opacity:var(--____link-active-opacity);
+  filter:var(--____link-active-filter);
+  transform:var(--____link-active-transform);
+}
+:where(.____ *){font-family:var(--____font-family);}
+:where(.____ :is(b,em,strong)){font-weight:var(--____bold-font-weight)}
+:where(.____ :is(h1,h2,h3,h4,h5,h6)){font-weight:var(--____heading-font-weight)}
+:where(.____ :is(del)){text-decoration:line-through;}
+:where(.____ :is(i,var)){font-style:italic}
+:where(.____ :is(sup,sub)){font-size:var(--____supsub-font-size)}
+:where(.____ sup){vertical-align:super}
+:where(.____ sub){vertical-align:sub}
+:where(.____ img){width:100%;display:block;}
+
+:where(.____ :is(button,input[type="submit"],input[type="reset"]):hover){
+  color:var(--____button-hover-color);
+  background:var(--____button-hover-background);
+  opacity:var(--____button-hover-opacity);
+  filter:var(--____button-hocer-filter);
+  transform:var(--____button-hover-transform);
+}
+:where(.____ :is(button,input[type="submit"],input[type="reset"]):active){
+  color:var(--____button-active-color);
+  background:var(--____button-active-background);
+  opacity:var(--____button-active-opacity);
+  filter:var(--____button-active-filter);
+  transform:var(--____button-active-transform);
+}
+:where(.____ details:hover){
+  opacity:var(--____details-hover-opacity);
+  color:var(--____link-active-color);
+  background:var(--____link-active-background);
+  opacity:var(--____link-active-opacity);
+  filter:var(--____link-active-filter);
+  transform:var(--____link-active-transform);
+}
+:where(.____ :is(a,button,input[type="submit"],input[type="reset"],summary)){cursor:var(--____hover-cursor)}
+:where(.____ :is(
+  input:not(
+    [type="button"],
+    [type="checkbox"],
+    [type="color"],
+    [type="image"],
+    [type="file"],
+    [type="radio"],
+    [type="range"],
+    [type="reset"],
+    [type="submit"]
+  ),
+  textarea,
+  select
+)){
+  border:var(--____input-box-border);
+  font-size:var(--____input-font-size);
+  color:var(--____input-text-color);
+}
+:where(.____) ::placeholder,
+:where(.____ select){
+  align-items:center;
+  color:var(--____input-text-color);
+  color:var(--____select-text-color);
+}
+:where(.____ select:invalid){
+  font-size:var(--____placeholder-font-size);
+  color:var(--____placeholder-color);
+}
+:where(.____ label){
+  display:inline-flex;
+  align-items:center
+}
+:where(.____ label>input){margin-right:0.25em;}
+:where(.____ :first-child:is(label.____, input[type="radio"].____)){display:none}
+:where(.____ :is(button,input[typpe="button"],input[type="submit"],input[type="reset"])){
+  background:var(--____button-background);
+  color:var(--____button-text-color);
+}
+
+:where(.____) :is(ul,ol){list-style:inside}
+:where(.____ ol>li){list-style-type:decimal}
+:where(.____ ol>li){list-style-type:decimal}
+
+:where(.____ ruby>rt,ruby.____>rt){font-size:var(--____ruby-font-size)}
+
+:where(.____ summary:hover){opacity:var(--____summary-hover-opacity)}
+
+/****/
+:where(head.____){
+  --____reset-css-include:0;
+  --____:'____';
+}
+:where(head.____:has(link[href*="reset.css"]~link[href*="u4.css"])){
+  --____reset-css-include:1;
+  --____debug-comment:'[u4]found reset.css';
+  --____:'_--_';
+}
+:where(head.____:has(link[href*="u4.css"]~link[href*="reset.css"])){
+  --____debug-comment:'[u4]link-order reversed?';
+  --____:'....';
+}
+:where(head.____:not(:has(link[href*="reset.css"]))){
+  --____debug-comment:'[u4]required reset.css';
+  --____:'.  .';
+}
+:where(head.____:has(link[href*="common.css"]~link[href*="u4.css"]):not(:has(link[href*="reset.css"]))){
+  --____reset-css-include:1;
+  --____debug-comment:'[u4]found common.css (Maybe @import reset.css)';
+  --____:'.::.';
+}
+:where(head.____:has(link[href*="common.css"]~link[href*="reset.css"])),
+:where(head.____:has(link[href*="reset.css"]~link[href*="common.css"])){
+  --____debug-comment:'[u4]choice common.css or reset.css';
+  --____:' .. ';
+}
